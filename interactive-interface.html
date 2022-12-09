@@ -43,6 +43,7 @@
                 loading="lazy"
                 class="rounded-circle"
         />
+        <small class="intro">&nbsp Healthy Cat</small>
       </a>
       <!-- Left links -->
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -73,7 +74,7 @@
   <div class="mask" style="background-color: rgba(0, 0, 0, 0.35);">
     <div class="d-flex justify-content-center align-items-center h-100">
       <div class="text-white">
-        <h1 class="intro mb-3">Interactive Bakery Ordering Interface</h1>
+        <h1 class="intro mb-3">Interactive Bakery Order Interface</h1>
       </div>
     </div>
   </div>
@@ -106,20 +107,23 @@
 
       <h3 class="intro text-center" id="website">The Deployed Website</h3>
       <br>
-      <ul>
-        <li>The screenshot of the deployed interactive interface</li>
+      <p>Here is a screenshot of the deployed interactive interface. You can find bakery items are listed on the right-hand side of the
+      page with its name, description, calories, type, dietary restriction, and its price. On the left-hand side of the application,
+      there are sorting methods wihtin the dropdown button, two filters: type and dietary restriction, and Cart which aggregates items
+      added in and show their total price.</p>
 
-      </ul>
       <p><img src="./img/interactive/web-deployed.png" alt="web-deployed" width = "700px" height = "auto" class="mx-auto d-block"/></p>
+      <figcaption class="figure-caption text-center">Figure 1: The screenshot of the deployed interactive interface </figcaption>
+      <br>
       <p>Here is the <a href='https://healthycat102.github.io/Development/'>link</a>: <a href='https://healthycat102.github.io/Development/' target='_blank' class='url'>https://healthycat102.github.io/Development/</a></p>
 
       <br>
       <hr class="hr hr-blurry">
       <br>
 
-      <h3 class="intro text-center" id="goal">Goal and Value of the Application</h3>
+      <h3 class="intro text-center" id="goal">Goal and Value</h3>
       <br>
-      <p>The goal and value of the application is to let users to fast select bakery items they want to buy via filtering
+      <p>The goal and value of the application is to let users fast select bakery items they want to buy via filtering
         (type and dietary restrictions) and sorting (name, price, calories). This application list items for purchase and
         cart that totals their price. Any combination of filters, and all filters and sorting methods work together to let
         user quickly select items within their requirement.
@@ -131,6 +135,7 @@
 
       <h3 class="intro text-center" id="principle">Usability Principles Considered</h3>
       <br>
+      <p>When I create this interactive interface, the following usability principles are considered:</p>
       <ul>
         <li><strong>Effectivity: Reach the goal</strong>: the application enables the user to work effectively by providing a suitable functionality for the completion of his/her purchase.</li>
         <li><strong>Efficiency: Reach the goal quickly</strong>: By providing filters and sorting methods, and any combinations of them work together, the application requires only minimal time to react and execute an action.</li>
@@ -148,7 +153,7 @@
       <br>
       <ul>
         <li>Each <strong>item</strong> is abstracted into a component and instantiated from within the app.</li>
-        <li>Each <strong>filter</strong> is abstracted into a component and instanciated from within the app.</li>
+        <li>Each <strong>filter</strong> is abstracted into a component and instantiated from within the app.</li>
         <li>The sorting function is not abstracted as a component since only one sorting dimention is needed (no reuse). However, it can also be abstracted out as a component for cleanness.</li>
 
       </ul>
@@ -157,8 +162,9 @@
       <hr class="hr hr-blurry">
       <br>
 
-      <h3 class="intro text-center" id="data">How Data is Passed Down Through Components</h3>
+      <h3 class="intro text-center" id="data">Data Flow</h3>
       <br>
+      <p>As for how data is passed down through components, here are approaches:</p>
       <ul>
         <li>For each item component, the item object is passed in so that the compnent is able to display item information. Furthermore, a property indicating whether the item is added to cart is also passed in to control the &quot;add to cart&quot; button functionality.</li>
         <li>For each filter component, a state that stores whether each variant is selected or not is passed in, so that the updated list of items can be computed from outside the component (within the app) when the user changes the filter.</li>
@@ -169,7 +175,7 @@
       <hr class="hr hr-blurry">
       <br>
 
-      <h3 class="intro text-center" id="state">How the User Triggers State Changes</h3>
+      <h3 class="intro text-center" id="state">Triggers State Changes</h3>
       <br>
       <p>The user can trigger state changes via three ways:</p>
       <ul>
@@ -178,6 +184,12 @@
         <li>Select filter options, for example, select &quot;cake&quot; and &quot;pastry&quot; in &quot;Type&quot; filter, and/or select &quot;nut-free&quot; in &quot;Diet Restriction&quot; filter.</li>
 
       </ul>
+
+      <br>
+      <hr class="hr hr-blurry">
+      <br>
+      <p class="fs-5 intro text-center"><strong>THANK YOU FOR READING THIS PAGE!</strong> <i class="fas fa-heart fa-1x" style="color:red"></i></p>
+      <p>&nbsp;</p>
     </div>
   </div>
 
@@ -195,7 +207,7 @@
           <a class="nav-link" href="#goal">Goal and Value</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#principle">Usability Principles</a>
+          <a class="nav-link" href="#principle">Usability Principles Considered</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#component">Organization of Components</a>
