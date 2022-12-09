@@ -18,129 +18,249 @@
   <link rel="stylesheet" href="css/main.css" />
 </head>
 <body>
-<nav class="navbar navbar-light shadow-0" style="background-color: #e3f2fd;">
+<nav class="navbar navbar-expand-lg navbar-light shadow-0" style="background-color: #e3f2fd;">
   <div class="container">
-    <a class="navbar-brand" href="index.html">
-      <img
-              src="./img/main/logo.jpg"
-              height="50"
-              alt="Logo"
-              loading="lazy"
-              class="rounded-circle"
-      />
-    </a>
+    <!-- Toggle button -->
+    <button
+            class="navbar-toggler"
+            type="button"
+            data-mdb-toggle="collapse"
+            data-mdb-target="#navbarRightAlignExample"
+            aria-controls="navbarRightAlignExample"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+    >
+      <i class="fas fa-bars"></i>
+    </button>
+    <!-- Collapsible wrapper -->
+    <div class="collapse navbar-collapse" id="navbarRightAlignExample">
+      <!-- Navbar brand -->
+      <a class="navbar-brand" href="index.html">
+        <img
+                src="./img/main/logo2.jpg"
+                height="50"
+                alt="Logo"
+                loading="lazy"
+                class="rounded-circle"
+        />
+      </a>
+      <!-- Left links -->
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="intro nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="intro nav-link" href="index.html#work">Work</a>
+        </li>
+        <li class="nav-item">
+          <a class="intro nav-link" href="index.html#about">About</a>
+        </li>
+      </ul>
+      <!-- Left links -->
+    </div>
+    <!-- Collapsible wrapper -->
   </div>
 </nav>
 
-<div class="container">
-  <br>
-  <h1 class="intro text-center">Responsive Redesign</h1>
-  <br>
-  <h3 class="intro text-center">Identifying Usability Problems</h3>
-  <br>
-  <ul>
-    <li><p>Picking a Web Page: <a href='https://www.eastsideveterinary.com/'>one of the local veterinary clinic</a></p>
-      <ul>
-        <li><p>The screenshot</p>
-          <p><img src="./img/res-redesign/Webpage_screenshot.png" alt="Webpage_screenshot" style="zoom:30%;" class="mx-auto d-block" /></p>
-        </li>
-        <li><p>The link is <a href='https://www.eastsideveterinary.com/'><strong>here</strong></a></p>
-        </li>
-        <li><p>Reasoning: This is a webpage of one of the local veterinary clinics, <em>Eastside Veterinary Clinic</em>, which is viewable by anyone without creating an account but with poor design. </p>
-        </li>
-
-      </ul>
-    </li>
-    <li><p>Finding Problems</p>
-      <p>After investigating and analyzing the usability of the web page (usability, learnability, and memorability) and thinking about its conceptual model, I found the following problems:</p>
-      <ol start='' >
-        <li><strong>CONTACT US</strong> button should provide the user with some contact information like phone number, fax number, email address, etc. But the current <em>CONTACT US</em> just jumps to the email box with a new email without any additional useful information.</li>
-        <li>There&#39;s only <strong>NEW PET REGISTRATION</strong> button/option for new customers/users, No option for customers who have already registered their pets to <em>log in</em>.</li>
-        <li>It didn&#39;t keep consistency or platform conventions. <strong>Visit our new online pharmacy!</strong> should be kept consistent as a button shown as <strong>Pharmacy</strong>.</li>
-        <li>When users are browsing this webpage, one of the most important information they care about is <strong>how to book an appointment</strong>, there is not any related info or text about it. And it should be placed in the obvious position on this webpage.</li>
-        <li><strong>Working</strong> hours are another important piece of information that the users what to know. It should be placed in some obvious position like the tabs on the top of this webpage to avoid users taking efforts to look for it.</li>
-        <li><strong>The covid advisory should be removed</strong> from this webpage, because this webpage is expected to provide users some general information about this vet clinic rather than displaying some specific instructions for certain time period or situations. The covid advisory can be moved to another webpage after users click <strong>book appointment</strong> button.</li>
-
-      </ol>
-    </li>
-    <li><p>Accessibility</p>
-      <ul>
-        <li>I agree with most of the problems detected.</li>
-        <li>The structure of this webpage is not well organized, for example, it doesn&#39;t have a first-level heading.</li>
-        <li>Several different images have the same alternative text, this is not good.</li>
-        <li><em>WebAIM WAVE</em> detected several very low contrasts with a contrast ratio of 4.29:1, they specifically refer to those red fonts on white backgrounds. But when browsing this webpage, the contrast for those text looks not so bad as it detected.</li>
-
-      </ul>
-    </li>
-
-  </ul>
-
-  <br>
-  <hr class="hr" />
-  <br>
-
-  <h3 class="intro text-center">Visual Redesign</h3>
-  <br>
-  <ul>
-    <li><p>Low-Fidelity Wireframing (annotations on the wireframe for desktop to avoid redundancy, because different screen sizes have the same UI elements )</p>
-      <ul>
-        <li><p>For Desktop (this wireframe mimics the action of scrolling down, put everything in one wireframe), where P1 represents the UI element that addressed the corresponding problems in Part 1 and etc:</p>
-          <p><img src="./img/res-redesign/lofi-design-desktop-annoted.png" alt="lofi-design-desktop-annoted" style="zoom:45%;" class="mx-auto d-block" /></p>
-        </li>
-        <li><p>For tablet (this wireframe mimics the action of scrolling down, put everything in one wireframe):</p>
-          <p><img src="./img/res-redesign/New Wireframe 2.png" alt="New Wireframe 2" style="zoom:70%;" class="mx-auto d-block" /></p>
-        </li>
-        <li><p>For mobile (this wireframe mimics the action of scrolling down, put everything in one wireframe):</p>
-          <p><img src="./img/res-redesign/New Wireframe 1.png" alt="New Wireframe 1" style="zoom:100%;" class="mx-auto d-block" /></p>
-        </li>
-
-      </ul>
-    </li>
-    <li><p>Visual Design Style Guide</p>
-      <p>Here is my visual design style guide:</p>
-      <p><img src="./img/res-redesign/Style-guide.png" alt="Style-guide" style="zoom:40%;" class="mx-auto d-block" /></p>
-    </li>
-    <li><p>High-Fidelity Prototyping (annotations on desktop version to avoid redundancy, because different screen sizes have the almost same UI elements)</p>
-      <ul>
-        <li><p>For Desktop (it mimics the action of scrolling down, put everything in one page) </p>
-          <p><img src="./img/res-redesign/Hifi-Desktop-new-annoted.png" alt="Hifi-Desktop-new-annoted" style="zoom:10%;" class="mx-auto d-block"/></p>
-        </li>
-        <li><p>For Tablet (it mimics the action of scrolling down, put everything in one page) </p>
-          <p><img src="./img/res-redesign/Hifi-tablet-new-annoted.png" alt="Hifi-tablet-new-annoted" style="zoom:10%;" class="mx-auto d-block"/></p>
-        </li>
-        <li><p>For Phone (it mimics the action of scrolling down, put everything in one page) </p>
-          <p><img src="./img/res-redesign/Hifi-phone-new-annoted.png" alt="Hifi-phone-new" style="zoom:10%;" class="mx-auto d-block" /></p>
-        </li>
-
-      </ul>
-    </li>
-
-  </ul>
-
-  <br>
-  <hr class="hr" />
-  <br>
-
-  <h3 class="intro text-center"><a href='https://healthycat102.github.io/responsive-redesign-deployment/'>Responsive Redesign</a></h3>
-  <br>
-  <ul>
-    <li><p><strong>The link to my responsively redesigned page is <a href='https://healthycat102.github.io/responsive-redesign-deployment/'>here</a></strong></p>
-    </li>
-    <li><p>A screenshot the responsive redesign page in Desktop:</p>
-      <p><img src="./img/res-redesign/deploy-desktop.png" alt="deploy-desktop" style="zoom:35%;" class="mx-auto d-block" /></p>
-    </li>
-    <li><p>A screenshot the responsive redesign page in Tablet or phone:</p>
-      <p><img src="./img/res-redesign/deploy-tablet-phone.png" alt="deploy-tablet-phone" style="zoom:40%;" class="mx-auto d-block" /></p>
-    </li>
-
-  </ul>
-  <p><strong>THANK YOU FOR READING THIS PAGE!</strong></p>
-  <p>&nbsp;</p>
+<!-- Background image -->
+<div
+        class="p-5 text-center bg-image"
+        style="
+                    background-image: url('./img/res-redesign/vet-clinic-tranc.jpg');
+                    height: 400px;
+    "
+>
+  <div class="mask" style="background-color: rgba(0, 0, 0, 0.35);">
+    <div class="d-flex justify-content-center align-items-center h-100">
+      <div class="text-white">
+        <h1 class="intro mb-3">Redesign Vet Clinic Webpage</h1>
+      </div>
+    </div>
+  </div>
 </div>
+<!-- Background image -->
+<br>
+
+<div class="row justify-content-center">
+  <div  class="col-md-1">
+  </div>
+  <div class="col-md-9">
+    <!-- Spied element -->
+    <div
+            data-mdb-spy="scroll"
+            data-mdb-target="#scrollspy1"
+            data-mdb-offset="0"
+            class="scrollspy-example"
+    >
+
+      <h3 class="intro text-center" id="intro">Introduction</h3>
+      <p>abcdefg</p>
+
+      <br>
+      <hr class="hr hr-blurry">
+      <br>
+
+      <h3 class="intro text-center" id="problem">Identifying Usability Problems</h3>
+      <br>
+      <ul>
+        <li><p>Picking a Web Page: <a href='https://www.eastsideveterinary.com/'>one of the local veterinary clinic</a></p>
+          <ul>
+            <li><p>The screenshot</p>
+              <p><img src="./img/res-redesign/Webpage_screenshot.png" alt="Webpage_screenshot" width = "700px" height = "auto" class="mx-auto d-block" /></p>
+              <figcaption class="figure-caption text-center">Figure1: The screenshot of the poorly designed vet clinic webpage</figcaption>
+            </li>
+            <li><p>The link is <a href='https://www.eastsideveterinary.com/'><strong>here</strong></a></p>
+            </li>
+            <li><p>Reasoning: This is a webpage of one of the local veterinary clinics, <em>Eastside Veterinary Clinic</em>, which is viewable by anyone without creating an account but with poor design. </p>
+            </li>
+
+          </ul>
+        </li>
+        <li><p>Finding Problems</p>
+          <p>After investigating and analyzing the usability of the web page (usability, learnability, and memorability) and thinking about its conceptual model, I found the following problems:</p>
+          <ol start='' >
+            <li><strong>CONTACT US</strong> button should provide the user with some contact information like phone number, fax number, email address, etc. But the current <em>CONTACT US</em> just jumps to the email box with a new email without any additional useful information.</li>
+            <li>There&#39;s only <strong>NEW PET REGISTRATION</strong> button/option for new customers/users, No option for customers who have already registered their pets to <em>log in</em>.</li>
+            <li>It didn&#39;t keep consistency or platform conventions. <strong>Visit our new online pharmacy!</strong> should be kept consistent as a button shown as <strong>Pharmacy</strong>.</li>
+            <li>When users are browsing this webpage, one of the most important information they care about is <strong>how to book an appointment</strong>, there is not any related info or text about it. And it should be placed in the obvious position on this webpage.</li>
+            <li><strong>Working</strong> hours are another important piece of information that the users what to know. It should be placed in some obvious position like the tabs on the top of this webpage to avoid users taking efforts to look for it.</li>
+            <li><strong>The covid advisory should be removed</strong> from this webpage, because this webpage is expected to provide users some general information about this vet clinic rather than displaying some specific instructions for certain time period or situations. The covid advisory can be moved to another webpage after users click <strong>book appointment</strong> button.</li>
+
+          </ol>
+        </li>
+        <li><p>Accessibility</p>
+          <ul>
+            <li>I agree with most of the problems detected.</li>
+            <li>The structure of this webpage is not well organized, for example, it doesn&#39;t have a first-level heading.</li>
+            <li>Several different images have the same alternative text, this is not good.</li>
+            <li><em>WebAIM WAVE</em> detected several very low contrasts with a contrast ratio of 4.29:1, they specifically refer to those red fonts on white backgrounds. But when browsing this webpage, the contrast for those text looks not so bad as it detected.</li>
+
+          </ul>
+        </li>
+
+      </ul>
+
+      <br>
+      <hr class="hr hr-blurry" />
+      <br>
+
+      <h3 class="intro text-center" id="redesign">Visual Redesign</h3>
+      <br>
+      <ul>
+        <div id="lowfi">
+          <li><p>Low-Fidelity Wireframing (annotations on the wireframe for desktop to avoid redundancy, because different screen sizes have the same UI elements )</p>
+            <ul>
+              <li><p>For Desktop (this wireframe mimics the action of scrolling down, put everything in one wireframe), where P1 represents the UI element that addressed the corresponding problems in Part 1 and etc:</p>
+                <p><img src="./img/res-redesign/lofi-design-desktop-annoted.png" alt="lofi-design-desktop-annoted" width = "700px" height = "auto" class="mx-auto d-block" /></p>
+                <figcaption class="figure-caption text-center">Figure 2: Low-Fi wireframe for Desktop</figcaption>
+              </li>
+              <li><p>For tablet (this wireframe mimics the action of scrolling down, put everything in one wireframe):</p>
+                <p><img src="./img/res-redesign/New Wireframe 2.png" alt="New Wireframe 2" width = "auto" height = "800px" class="zoom mx-auto d-block" /></p>
+                <figcaption class="figure-caption text-center">Figure 3: Low-Fi wireframe for tablet (click to zoom in)</figcaption>
+              </li>
+              <li><p>For mobile (this wireframe mimics the action of scrolling down, put everything in one wireframe):</p>
+                <p><img src="./img/res-redesign/New Wireframe 1.png" alt="New Wireframe 1" width = "auto" height = "800px" class="zoom mx-auto d-block" /></p>
+                <figcaption class="figure-caption text-center">Figure 4: Low-Fi wireframe for phone (click to zoom in)</figcaption>
+              </li>
+            </ul>
+          </li>
+        </div>
+        <div id="style">
+          <li><p>Visual Design Style Guide</p>
+            <p>Here is my visual design style guide:</p>
+            <p><img src="./img/res-redesign/Style-guide.png" alt="Style-guide" width = "700px" height = "auto" class="mx-auto d-block" /></p>
+            <figcaption class="figure-caption text-center">Figure 5: The visual design style guide</figcaption>
+          </li>
+        </div>
+        <div id="hifi">
+          <li><p>High-Fidelity Prototyping (annotations on desktop version to avoid redundancy, because different screen sizes have the almost same UI elements)</p>
+            <ul>
+              <li><p>For Desktop (it mimics the action of scrolling down, put everything in one page) </p>
+                <p><img src="./img/res-redesign/Hifi-Desktop-new-annoted.png" alt="Hifi-Desktop-new-annoted" width = "700px" height = "auto" class="mx-auto d-block"/></p>
+                <figcaption class="figure-caption text-center">Figure 6: Hi-Fi prototype for desktop</figcaption>
+              </li>
+              <li><p>For Tablet (it mimics the action of scrolling down, put everything in one page) </p>
+                <p><img src="./img/res-redesign/Hifi-tablet-new-annoted.png" alt="Hifi-tablet-new-annoted" width = "auto" height = "800px" class="zoom mx-auto d-block"/></p>
+                <figcaption class="figure-caption text-center">Figure 7: Hi-Fi prototype for tablet (click to zoom in)</figcaption>
+              </li>
+              <li><p>For Phone (it mimics the action of scrolling down, put everything in one page) </p>
+                <p><img src="./img/res-redesign/Hifi-phone-new-annoted.png" alt="Hifi-phone-new" width = "auto" height = "800px" class="zoom mx-auto d-block" /></p>
+                <figcaption class="figure-caption text-center">Figure 8: Hi-Fi prototype for phone (click to zoom in)</figcaption>
+              </li>
+
+            </ul>
+          </li>
+        </div>
+      </ul>
+
+      <br>
+      <hr class="hr hr-blurry" />
+      <br>
+
+      <h3 class="intro text-center" id="responsive"><a href='https://healthycat102.github.io/responsive-redesign-deployment/'>Responsive Redesign</a></h3>
+      <br>
+      <ul>
+        <li><p><strong>The link to my responsively redesigned page is <a href='https://healthycat102.github.io/responsive-redesign-deployment/'>here</a></strong></p>
+        </li>
+        <li><p>A screenshot the responsive redesign page in Desktop:</p>
+          <p><img src="./img/res-redesign/deploy-desktop.png" alt="deploy-desktop" width = "700px" height = "auto" class="mx-auto d-block" /></p>
+          <figcaption class="figure-caption text-center">Figure 9: Screenshot of the deployed responsive redesigned webpage for desktop</figcaption>
+        </li>
+        <li><p>A screenshot the responsive redesign page in Tablet or phone:</p>
+          <p><img src="./img/res-redesign/deploy-tablet-phone.png" alt="deploy-tablet-phone" width = "auto" height = "500px" class="zoom mx-auto d-block" /></p>
+          <figcaption class="figure-caption text-center">Figure 10: Screenshot of the deployed responsive redesigned webpage for tablet/phone (click to zoom in)</figcaption>
+        </li>
+
+      </ul>
+
+      <br>
+      <hr class="hr hr-blurry">
+      <br>
+      <p class="text-center"><strong>THANK YOU FOR READING THIS PAGE!</strong></p>
+      <p>&nbsp;</p>
+      </div>
+    </div>
+
+    <div class="col-md-2">
+      <!-- Scrollspy -->
+      <div id="scrollspy1" class="sticky-top pt-5">
+        <ul class="nav flex-column nav-pills menu-sidebar">
+          <li class="nav-item">
+            <a class="nav-link" href="#intro">Introduction</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#problem">Usability Problems</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#redesign">Visual Redesign</a>
+            <ul class="nav flex-column ps-3">
+              <li class="nav-item">
+                <a class="nav-link" href="#lowfi">Low-Fi Wireframe</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#style">Design Style Guide</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#hifi">Hi-Fi Prototype</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#responsive">Responsive Redesign</a>
+          </li>
+        </ul>
+      </div>
+      <!-- Scrollspy -->
+    </div>
+  </div>
+
 
 <!-- MDB -->
 <script type="text/javascript" src="js/mdb.min.js"></script>
 <!-- Custom scripts -->
-<script type="text/javascript"></script>
+<script type="text/javascript" src="node_modules/medium-zoom/dist/medium-zoom.min.js"></script>
+<script type="text/javascript">
+  mediumZoom('.zoom');
+</script>
 </body>
 </html>

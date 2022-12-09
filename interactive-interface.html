@@ -18,100 +18,193 @@
   <link rel="stylesheet" href="css/main.css" />
 </head>
 <body>
-<nav class="navbar navbar-light shadow-0" style="background-color: #e3f2fd;">
+<nav class="navbar navbar-expand-lg navbar-light shadow-0" style="background-color: #e3f2fd;">
   <div class="container">
-    <a class="navbar-brand" href="index.html">
-      <img
-              src="./img/main/logo.jpg"
-              height="50"
-              alt="Logo"
-              loading="lazy"
-              class="rounded-circle"
-      />
-    </a>
+    <!-- Toggle button -->
+    <button
+            class="navbar-toggler"
+            type="button"
+            data-mdb-toggle="collapse"
+            data-mdb-target="#navbarRightAlignExample"
+            aria-controls="navbarRightAlignExample"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+    >
+      <i class="fas fa-bars"></i>
+    </button>
+    <!-- Collapsible wrapper -->
+    <div class="collapse navbar-collapse" id="navbarRightAlignExample">
+      <!-- Navbar brand -->
+      <a class="navbar-brand" href="index.html">
+        <img
+                src="./img/main/logo2.jpg"
+                height="50"
+                alt="Logo"
+                loading="lazy"
+                class="rounded-circle"
+        />
+      </a>
+      <!-- Left links -->
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="intro nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="intro nav-link" href="index.html#work">Work</a>
+        </li>
+        <li class="nav-item">
+          <a class="intro nav-link" href="index.html#about">About</a>
+        </li>
+      </ul>
+      <!-- Left links -->
+    </div>
+    <!-- Collapsible wrapper -->
   </div>
 </nav>
 
-<div class="container">
-  <br>
-  <h1 class="intro text-center">Interactive Interface</h1>
+<!-- Background image -->
+<div
+        class="p-5 text-center bg-image"
+        style="
+                    background-image: url('./img/main/bakery-img1-trunc.jpg');
+                    height: 400px;
+    "
+>
+  <div class="mask" style="background-color: rgba(0, 0, 0, 0.35);">
+    <div class="d-flex justify-content-center align-items-center h-100">
+      <div class="text-white">
+        <h1 class="intro mb-3">Interactive Bakery Ordering Interface</h1>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Background image -->
+<br>
 
-  <br>
+<div class="row justify-content-center">
+  <div  class="col-md-1">
+  </div>
+  <div class="col-md-8">
+    <!-- Spied element -->
+    <div
+            data-mdb-spy="scroll"
+            data-mdb-target="#scrollspy1"
+            data-mdb-offset="0"
+            class="scrollspy-example"
+    >
+      <h3 class="intro text-center" id="intro">Introduction</h3>
+      abcd
 
-  <h3 class="intro text-center">The Deployed Website</h3>
-  <br>
-  <ul>
-    <li>The screenshot of the deployed interactive interface</li>
+      <br>
+      <hr class="hr hr-blurry">
+      <br>
 
-  </ul>
-  <p><img src="./img/interactive/web-deployed.png" alt="web-deployed" style="zoom:30%;" class="mx-auto d-block"/></p>
-  <p>Here is the <a href='https://healthycat102.github.io/Development/'>link</a>: <a href='https://healthycat102.github.io/Development/' target='_blank' class='url'>https://healthycat102.github.io/Development/</a></p>
+      <h3 class="intro text-center" id="website">The Deployed Website</h3>
+      <br>
+      <ul>
+        <li>The screenshot of the deployed interactive interface</li>
 
-  <br>
-  <hr class="hr">
-  <br>
+      </ul>
+      <p><img src="./img/interactive/web-deployed.png" alt="web-deployed" width = "700px" height = "auto" class="mx-auto d-block"/></p>
+      <p>Here is the <a href='https://healthycat102.github.io/Development/'>link</a>: <a href='https://healthycat102.github.io/Development/' target='_blank' class='url'>https://healthycat102.github.io/Development/</a></p>
 
-  <h3 class="intro text-center">Goal and Value of the Application</h3>
-  <br>
-  <p>The goal and value of the application is to let users to fast select bakery items they want to buy via filtering
-    (type and dietary restrictions) and sorting (name, price, calories). This application list items for purchase and
-    cart that totals their price. Any combination of filters, and all filters and sorting methods work together to let
-    user quickly select items within their requirement.
-  </p>
+      <br>
+      <hr class="hr hr-blurry">
+      <br>
 
-  <br>
-  <hr class="hr">
-  <br>
+      <h3 class="intro text-center" id="goal">Goal and Value of the Application</h3>
+      <br>
+      <p>The goal and value of the application is to let users to fast select bakery items they want to buy via filtering
+        (type and dietary restrictions) and sorting (name, price, calories). This application list items for purchase and
+        cart that totals their price. Any combination of filters, and all filters and sorting methods work together to let
+        user quickly select items within their requirement.
+      </p>
 
-  <h3 class="intro text-center">Usability Principles Considered</h3>
-  <br>
-  <ul>
-    <li><strong>Effectivity: Reach the goal</strong>: the application enables the user to work effectively by providing a suitable functionality for the completion of his/her purchase.</li>
-    <li><strong>Efficiency: Reach the goal quickly</strong>: By providing filters and sorting methods, and any combinations of them work together, the application requires only minimal time to react and execute an action.</li>
-    <li><strong>Controllability</strong>: The user has control over all actions. He may cancel, pause, and resume actions at a point in time. It&#39;s possible for him to revert an action and, as the case may be, start a new attempt if the result was not satisfactory.</li>
-    <li><strong>Consistency: Everything fits together</strong>: The application follow the general conventions with consistennt usage of terms, icons, and layouts.</li>
-    <li><strong>Design and layout: comprehensible at first sight</strong>: Information and components are generally presented to the user in a way that they can be noticed annd that texts can be read easily.</li>
+      <br>
+      <hr class="hr hr-blurry">
+      <br>
 
-  </ul>
+      <h3 class="intro text-center" id="principle">Usability Principles Considered</h3>
+      <br>
+      <ul>
+        <li><strong>Effectivity: Reach the goal</strong>: the application enables the user to work effectively by providing a suitable functionality for the completion of his/her purchase.</li>
+        <li><strong>Efficiency: Reach the goal quickly</strong>: By providing filters and sorting methods, and any combinations of them work together, the application requires only minimal time to react and execute an action.</li>
+        <li><strong>Controllability</strong>: The user has control over all actions. He may cancel, pause, and resume actions at a point in time. It&#39;s possible for him to revert an action and, as the case may be, start a new attempt if the result was not satisfactory.</li>
+        <li><strong>Consistency: Everything fits together</strong>: The application follow the general conventions with consistennt usage of terms, icons, and layouts.</li>
+        <li><strong>Design and layout: comprehensible at first sight</strong>: Information and components are generally presented to the user in a way that they can be noticed annd that texts can be read easily.</li>
 
-  <br>
-  <hr class="hr">
-  <br>
+      </ul>
 
-  <h3 class="intro text-center">Organization of Components</h3>
-  <br>
-  <ul>
-    <li>Each <strong>item</strong> is abstracted into a component and instantiated from within the app.</li>
-    <li>Each <strong>filter</strong> is abstracted into a component and instanciated from within the app.</li>
-    <li>The sorting function is not abstracted as a component since only one sorting dimention is needed (no reuse). However, it can also be abstracted out as a component for cleanness.</li>
+      <br>
+      <hr class="hr hr-blurry">
+      <br>
 
-  </ul>
+      <h3 class="intro text-center" id="component">Organization of Components</h3>
+      <br>
+      <ul>
+        <li>Each <strong>item</strong> is abstracted into a component and instantiated from within the app.</li>
+        <li>Each <strong>filter</strong> is abstracted into a component and instanciated from within the app.</li>
+        <li>The sorting function is not abstracted as a component since only one sorting dimention is needed (no reuse). However, it can also be abstracted out as a component for cleanness.</li>
 
-  <br>
-  <hr class="hr">
-  <br>
+      </ul>
 
-  <h3 class="intro text-center">How Data is Passed Down Through Components</h3>
-  <br>
-  <ul>
-    <li>For each item component, the item object is passed in so that the compnent is able to display item information. Furthermore, a property indicating whether the item is added to cart is also passed in to control the &quot;add to cart&quot; button functionality.</li>
-    <li>For each filter component, a state that stores whether each variant is selected or not is passed in, so that the updated list of items can be computed from outside the component (within the app) when the user changes the filter.</li>
+      <br>
+      <hr class="hr hr-blurry">
+      <br>
 
-  </ul>
+      <h3 class="intro text-center" id="data">How Data is Passed Down Through Components</h3>
+      <br>
+      <ul>
+        <li>For each item component, the item object is passed in so that the compnent is able to display item information. Furthermore, a property indicating whether the item is added to cart is also passed in to control the &quot;add to cart&quot; button functionality.</li>
+        <li>For each filter component, a state that stores whether each variant is selected or not is passed in, so that the updated list of items can be computed from outside the component (within the app) when the user changes the filter.</li>
 
-  <br>
-  <hr class="hr">
-  <br>
+      </ul>
 
-  <h3 class="intro text-center">How the User Triggers State Changes</h3>
-  <br>
-  <p>The user can trigger state changes via three ways:</p>
-  <ul>
-    <li>Click &quot;ADD TO CART&quot;</li>
-    <li>Select Sorting methods, like sorting by calories, sorting by price, or sorting by name.</li>
-    <li>Select filter options, for example, select &quot;cake&quot; and &quot;pastry&quot; in &quot;Type&quot; filter, and/or select &quot;nut-free&quot; in &quot;Diet Restriction&quot; filter.</li>
+      <br>
+      <hr class="hr hr-blurry">
+      <br>
 
-  </ul>
+      <h3 class="intro text-center" id="state">How the User Triggers State Changes</h3>
+      <br>
+      <p>The user can trigger state changes via three ways:</p>
+      <ul>
+        <li>Click &quot;ADD TO CART&quot;</li>
+        <li>Select Sorting methods, like sorting by calories, sorting by price, or sorting by name.</li>
+        <li>Select filter options, for example, select &quot;cake&quot; and &quot;pastry&quot; in &quot;Type&quot; filter, and/or select &quot;nut-free&quot; in &quot;Diet Restriction&quot; filter.</li>
+
+      </ul>
+    </div>
+  </div>
+
+  <div class="col-md-3">
+    <!-- Scrollspy -->
+    <div id="scrollspy1" class="sticky-top pt-5">
+      <ul class="nav flex-column nav-pills menu-sidebar">
+        <li class="nav-item">
+          <a class="nav-link" href="#intro">Introduction</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#website">The Deployed Website</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#goal">Goal and Value</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#principle">Usability Principles</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#component">Organization of Components</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#data">Data Flow</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#state">Trigger State Change</a>
+        </li>
+      </ul>
+    </div>
+    <!-- Scrollspy -->
+  </div>
 </div>
 
 <!-- MDB -->

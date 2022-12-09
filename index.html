@@ -19,34 +19,106 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-light shadow-0" style="background-color: #e3f2fd;">
+  <nav class="navbar navbar-expand-lg navbar-light shadow-0" style="background-color: #e3f2fd;">
     <div class="container">
-      <a class="navbar-brand" href="index.html">
+      <!-- Toggle button -->
+      <button
+              class="navbar-toggler"
+              type="button"
+              data-mdb-toggle="collapse"
+              data-mdb-target="#navbarRightAlignExample"
+              aria-controls="navbarRightAlignExample"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+      <!-- Collapsible wrapper -->
+      <div class="collapse navbar-collapse" id="navbarRightAlignExample">
+        <!-- Navbar brand -->
+        <a class="navbar-brand" href="index.html">
+          <img
+                  src="./img/main/logo2.jpg"
+                  height="50"
+                  alt="Logo"
+                  loading="lazy"
+                  class="rounded-circle"
+          />
+        </a>
+        <!-- Left links -->
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="intro nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="intro nav-link" href="#work">Work</a>
+          </li>
+          <li class="nav-item">
+            <a class="intro nav-link" href="#about">About</a>
+          </li>
+        </ul>
+        <!-- Left links -->
+      </div>
+      <!-- Collapsible wrapper -->
+    </div>
+  </nav>
+
+  <div  class="container">
+    <div class="row d-flex justify-content-center">
+      <div class="col-7">
+        <br>
+        <br>
+        <p class="fs-2 intro">Hey there!<br />I'm glad that you're here.</p>
+        <br>
+        <br>
+        <br>
+        <p class="fs-4 intro">Currently,<br />M.S. Computer Sicience @ BrownU <br />I'm passionate for neat and creative design</p>
+        <br>
+      </div>
+      <div class="col-3">
+        <br>
+        <br>
+        <br>
+        <br>
         <img
-                src="./img/main/logo.jpg"
-                height="50"
+                src="./img/main/logo2.jpg"
+                height="200"
                 alt="Logo"
                 loading="lazy"
                 class="rounded-circle"
         />
-      </a>
-    </div>
-  </nav>
-
-  <div class="container">
-    <div class="row d-flex justify-content-center">
-      <div class="col-12 w-75">
-        <p class="fs-1 intro">Hey there!</p>
-        <p class="fs-1 intro">I'm glad that you're here.</p>
+        <br>
+        <br>
+        <br>
       </div>
-      <hr class="hr" />
+
+      <br>
+      <hr class="hr hr-blurry" />
+      <br>
+    </div>
+  </div>
+
+  <div class="container" id="work">
+    <div class="row d-flex justify-content-center">
+      <div class="col-6 p-4">
+        <a href="./iterative-design.html">
+          <div class="card">
+            <img src="./img/main/banana-img1-tranc.jpg" class="card-img" alt="Banana image"/>
+            <div class="card-body">
+              <h5 class="intro card-title"><strong> BANANAS Mobile App Design </strong></h5>
+              <p class="intro card-text">Design an interactive interface for an emerging startup, BANANAS, a grocery delivery startup
+              based in Jakarta, Indonesia.</p>
+            </div>
+          </div>
+        </a>
+      </div>
       <div class="col-6 p-4">
         <a href="./persona-and-storyboard.html">
           <div class="card">
-            <img src="./img/main/persona-img2.png" class="card-img" alt="Fissure in Sandstone"/>
+            <img src="./img/main/checkout-machine-img2.jpg" class="card-img pt-4" alt="Self-checkout Machine cartoon image"/>
             <div class="card-body">
-              <h5 class="card-title">Persona & Storyboard</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <h5 class="intro card-title"><strong> Creating Persona & Storyboard </strong></h5>
+              <p class="intro card-text">Select an interface in public view, observe real users interacting with it,create persons and illustrate a storyboard.</p>
             </div>
           </div>
         </a>
@@ -54,21 +126,11 @@
       <div class="col-6 p-4">
         <a href="./responsive-redesign.html">
           <div class="card">
-            <img src="./img/main/responsive-redesign-img.PNG" class="card-img" alt="Fissure in Sandstone"/>
+            <img src="./img/main/vet-clinic-img2.jpeg" class="card-img py-1" alt="Vet clinic image"/>
             <div class="card-body">
-              <h5 class="card-title">Responsive Redesign</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-6 p-4">
-        <a href="./iterative-design.html">
-          <div class="card">
-            <img src="./img/main/iterative-design-img.PNG" class="card-img" alt="Fissure in Sandstone"/>
-            <div class="card-body">
-              <h5 class="card-title">Iterative Desgin</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <h5 class="intro card-title"><strong> Redesign Vet Clinic Webpage </strong></h5>
+              <p class="intro card-text">Redesign webpage for a local vet clinic with usability problems, create Low-Fi and Hi-Fi prototypes,
+              and build a responsive website.</p>
             </div>
           </div>
         </a>
@@ -76,15 +138,54 @@
       <div class="col-6 p-4">
         <a href="./interactive-interface.html">
           <div class="card">
-            <img src="./img/main/development-img.PNG" class="card-img" alt="Fissure in Sandstone"/>
+            <img src="./img/main/bakery-img1.jpg" class="card-img" alt="Bakery store cartoon"/>
             <div class="card-body">
-              <h5 class="card-title">Interactive Interface</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <h5 class="intro card-title"><strong> Interactive Bakery Ordering Interface </strong></h5>
+              <p class="intro card-text">Develop an interactive list-based interface for a bakery store, use interface components, and tie the
+              components to an internal data state.</p>
             </div>
           </div>
         </a>
       </div>
     </div>
+
+    <br>
+    <hr class="hr hr-blurry">
+    <br>
+
+  </div>
+
+  <div class="container" id="about">
+    <div class="row d-flex justify-content-center">
+        <div class="col-7">
+        <p class="intro fs-5">Hey there!</p>
+        <p class="intro fs-6">I'm healthy cat (meow ~), a master's student at Brown studying computer science. I'm really enthusiastic about neat, creative
+          design, and fascinate with vibrant colors. UI/UX is my first design course which introduces me to many great design works and let
+          me hands-on to do my own design work <i class="far fa-grin-beam" style="color:cornflowerblue"></i></p>
+        <p class="intro fs-6">I'm a pet lover, especially cats. I have a cute kitten accompanying me when I'm studying here. He loves purring and
+          playing with balls. It's so comforting to have him. Therefore, I named my anonymous GitHub account "healthy cat", wish he will
+          stay healthy, safe and sound for his whole life <i class="fas fa-heart fa-1x" style="color:red"></i> </p>
+        <p class="intro fs-6">When I am not studying, I enjoy cooking delicious food to reward myself, hiking different trails, reading novels, visiting local restaurants,
+          watching movies, and visiting art and science museum (they're fantastic! <i class="fas fa-star" style="color:gold"></i>)</p>
+      </div>
+
+      <div class="col-5">
+        <br>
+        <br>
+        <img
+                src="./img/main/about-img.jpg"
+                height="350"
+                alt="Logo"
+                loading="lazy"
+                class="rounded-1s"
+        />
+        <br>
+        <br>
+        <br>
+        <br>
+      </div>
+    </div>
+
   </div>
 
   <!-- MDB -->
